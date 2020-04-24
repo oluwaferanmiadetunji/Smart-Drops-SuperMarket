@@ -1,0 +1,30 @@
+.products {
+    height:400px;
+    overflow:auto;
+    background-color:#DFDFDF;  
+}
+@media (max-width: 555px) {
+    .products {
+        height: 350px; 
+    }
+    .single-product img {
+        height:100px;
+        width:100px;
+    }
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .gray_btn {
+    margin-bottom: 15px;
+  }
+}
